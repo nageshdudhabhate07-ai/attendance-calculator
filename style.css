@@ -1,0 +1,104 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Center Page */
+body {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* background: linear-gradient(135deg, #667eea, #764ba2); */
+}
+
+.heading{
+  font-size: 20pxpx;
+}
+/* Main Container */
+body > div:first-child,
+body > div:last-child {
+  width: 100%;
+}
+
+/* Card Style */
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+div {
+  background: white;
+  padding: 25px 30px;
+  border-radius: 12px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+  width: 380px;
+  margin-bottom: 15px;
+}
+
+/* Heading */
+h1 {
+  text-align: center;
+  margin-bottom: 15px;
+  color: #333;
+}
+
+/* Paragraph */
+p {
+  font-size: 14px;
+  color: #555;
+  text-align: center;
+  line-height: 1.5;
+}
+
+/* Divider */
+hr {
+  width: 380px;
+  margin: 10px 0;
+  border: none;
+  border-top: 1px solid #ddd;
+}
+
+/* Labels */
+label {
+  font-weight: bold;
+  display: block;
+  margin-top: 15px;
+  margin-bottom: 5px;
+  color: #444;
+}
+
+/* Inputs and Select */
+input,
+select {
+  width: 100%;
+  padding: 8px 10px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  font-size: 14px;
+  outline: none;
+  transition: 0.3s;
+}
+
+/* Focus Effect */
+input:focus,
+select:focus {
+  border-color: #667eea;
+  box-shadow: 0 0 5px rgba(102, 126, 234, 0.5);
+}
+
+#result{
+  font-size: 20px;
+}
+
+button{
+  background-color: #333;
+  color: white;
+  height: 30px;
+  width: 200px;
+  border-radius: 5px;
+}
