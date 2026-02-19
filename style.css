@@ -6,61 +6,39 @@
   font-family: Arial, Helvetica, sans-serif;
 }
 
-/* Center Page */
+/* Body */
 body {
-  height: 100vh;
+  background: #f5f6fa;
   display: flex;
   justify-content: center;
   align-items: center;
-  /* background: linear-gradient(135deg, #667eea, #764ba2); */
+  min-height: 100vh;
+  padding: 15px;
 }
 
-.heading{
-  font-size: 20pxpx;
-}
 /* Main Container */
-body > div:first-child,
-body > div:last-child {
-  width: 100%;
-}
-
-/* Card Style */
-body {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-div {
+.container {
   background: white;
-  padding: 25px 30px;
+  padding: 25px;
   border-radius: 12px;
-  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
-  width: 380px;
-  margin-bottom: 15px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 400px;
 }
 
 /* Heading */
 h1 {
   text-align: center;
-  margin-bottom: 15px;
-  color: #333;
+  margin-bottom: 10px;
+  font-size: 22px;
 }
 
 /* Paragraph */
-p {
-  font-size: 14px;
-  color: #555;
+.heading {
+  font-size: 16px;
   text-align: center;
-  line-height: 1.5;
-}
-
-/* Divider */
-hr {
-  width: 380px;
-  margin: 10px 0;
-  border: none;
-  border-top: 1px solid #ddd;
+  margin-bottom: 20px;
+  color: #555;
 }
 
 /* Labels */
@@ -76,10 +54,10 @@ label {
 input,
 select {
   width: 100%;
-  padding: 8px 10px;
+  padding: 10px;
   border-radius: 6px;
   border: 1px solid #ccc;
-  font-size: 14px;
+  font-size: 15px;
   outline: none;
   transition: 0.3s;
 }
@@ -88,17 +66,42 @@ select {
 input:focus,
 select:focus {
   border-color: #667eea;
-  box-shadow: 0 0 5px rgba(102, 126, 234, 0.5);
+  box-shadow: 0 0 5px rgba(102, 126, 234, 0.3);
 }
 
-#result{
-  font-size: 20px;
-}
-
-button{
+/* Button */
+button {
+  margin-top: 20px;
+  width: 100%;
+  padding: 12px;
   background-color: #333;
   color: white;
-  height: 30px;
-  width: 200px;
-  border-radius: 5px;
+  border: none;
+  border-radius: 6px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+button:hover {
+  background-color: #555;
+}
+
+/* Result */
+#result {
+  margin-top: 20px;
+  font-size: 18px;
+  text-align: center;
+  font-weight: bold;
+}
+
+/* Tablet & Desktop */
+@media (min-width: 768px) {
+  h1 {
+    font-size: 26px;
+  }
+
+  .heading {
+    font-size: 18px;
+  }
 }
